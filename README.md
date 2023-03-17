@@ -1,38 +1,15 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 앨리스헬스케어 윌로키즈 어드민 페이지 제작을 담당했다.
 
-## Getting Started
+CSR과 SSR의 장점을 가진 Next.js를 회사에서는 웹 풀스택 개발이 간편한 이유로 Next와 TypeScript를 사용했다.
+Style은 Styled-JSX 를 사용했다.
 
-First, run the development server:
+#### /Login
+로그인 페이지 이다 Firebase를 사용한 구글 소셜 로그인으로 로그인 됐을때 console.log로 데이터를 넘겨받았다.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+#### /manage
+회원 관리 페이지로 간단한 퍼블리싱만 구현되어있다
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+#### /
+대쉬보드 페이지로 Chart.js 라이브러리를 사용했으며 
+데이터는 tRPC와 react-query를 사용했다. 기업 보안상의 이유로 데이터는 모의 데이터를 사용했으나 기업 프로젝트 당시에는 실제 데이터를 사용했다
+select의 option 값이 변함에 따라 react-query의 input 값이 변경되면서 각기 다른 데이터를 호출 할 수 있다.
