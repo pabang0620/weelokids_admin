@@ -1,15 +1,24 @@
-# 앨리스헬스케어 윌로키즈 어드민 페이지 제작을 담당했다.
+### 프로젝트
+기업 앨리스헬스케어의 Weelo Kids 서비스의 관리자 페이지 제작 프로젝트 입니다. Next.js와 TypeScript로 제작하였습니다.
 
-CSR과 SSR의 장점을 가진 Next.js를 회사에서는 웹 풀스택 개발이 간편한 이유로 Next와 TypeScript를 사용했다.
-Style은 Styled-JSX 를 사용했다.
+### 개발 환경
+- VS code
 
-#### /Login
-로그인 페이지 이다 Firebase를 사용한 구글 소셜 로그인으로 로그인 됐을때 console.log로 데이터를 넘겨받았다.
+### 기술 스택
+- next.js
+- TypeScript
+- tRPC
+- react-query
+- Chart.js
 
-#### /manage
-회원 관리 페이지로 간단한 퍼블리싱만 구현되어있다
+### 구현 화면
 
-#### /
-대쉬보드 페이지로 Chart.js 라이브러리를 사용했으며 
-데이터는 tRPC와 react-query를 사용했다. 기업 보안상의 이유로 데이터는 모의 데이터를 사용했으나 기업 프로젝트 당시에는 실제 데이터를 사용했다
-select의 option 값이 변함에 따라 react-query의 input 값이 변경되면서 각기 다른 데이터를 호출 할 수 있다.
+### 경험 및 배운점
+
+- 디자인팀과의 협업 경험 (Slack)
+- 사수 및 동기들과 Git 협업 경험
+- TypeScript를 사용한 협업 경험
+- react-query 상태관리 (select option 값이 변경됨에 따라 react-query의 input 값이 변경되며 불필요한 데이터 호출을 방지해줍니다.)
+- chart.js, react-select 등 라이브러리 사용법
+- next.js는 React의 CSR장점에 SSR이 추가되어 SEO(검색엔진)에 최적화된 기능을 제공합니다.
+- tRPC는 프론트엔드와 백엔드 코드간의 상호작용을 자동화해 서버쪽에서 데이터를 수정하면 프론트에서는 별도의 코드변경없이 데이터의 변경값을 호출가능합니다.
