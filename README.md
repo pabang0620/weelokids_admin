@@ -11,7 +11,6 @@
 - react-query
 - Chart.js
 
-### 구현 화면
 
 ### 경험 및 배운점
 
